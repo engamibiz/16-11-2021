@@ -1,0 +1,60 @@
+.product_card{
+    width: 30%;
+    box-shadow: 0px 0px 8px #333;
+    text-align: center;
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 50px;
+}
+.products{
+    width: 80%;
+    margin: 100px auto;
+}
+img{
+    max-width: 100%;
+}
+ins{
+    color:darkred;
+    font-size: 35px;
+    text-decoration: none;
+}
+del{
+    font-size: 25px;
+    color:#777;
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+.actions{
+    margin: 5px 0;
+}
+.actions input{
+    width: 50%;
+}
+.actions button , .actions input{
+    padding: 5px;
+    font-size: 25px;
+}
+.actions button{
+    background-color: brown;
+    color:#fff;
+     transition: backaground-color 0.3s ease-in-out;
+}
+.actions .minus{
+    transform: translateX(10px);
+}
+.actions .plus{
+    transform: translateX(-10px);
+}
+.addtocart{
+    width: 50%;
+    padding: 10px;
+    margin: 10px;
+    background-color: brown;
+    color:#fff;
+    transition: backaground-color 0.3s ease-in-out;
+}
+.addtocart:hover , .actions button:hover{
+    background-color: #333;
+}
