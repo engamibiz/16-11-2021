@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .calculator{
+            width: 300px;
+            height: 400px;
+            border: 1px solid #777;
+            box-shadow: 0 0 5px #333;
+            margin: 100px auto;
+        }
+        .screen{
+            height: 20%;
+            box-shadow: 0 0 5px #333;
+            background-color: #f5f5f5;
+            padding: 15px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .buttons{
+            text-align: center;
+            padding: 10px;
+        }
+        .buttons button{
+            width: 30%;
+            margin: 10px 1%;
+            padding: 10px;
+        }
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div id="screen" class="screen">
+
+        </div>
+        <div class="buttons">
+            <button onclick="writeNumber(1)">1</button>
+            <button onclick="writeNumber(2)">2</button>
+            <button onclick="writeNumber(3)">3</button>
+            <button onclick="writeNumber(4)">4</button>
+            <button onclick="writeNumber(5)">5</button>
+            <button onclick="writeNumber(6)">6</button>
+            <button onclick="writeNumber(7)">7</button>
+            <button onclick="writeNumber(8)">8</button>
+            <button onclick="writeNumber(9)">9</button>
+            <button>+</button>
+            <button>-</button>
+            <button>*</button>
+            <button>/</button>
+            <button>=</button>
+            <button onclick="earseScreen()">AC</button>
+        </div>
+    </div>
+    <script>
+        function writeNumber(num){
+            document.getElementById('screen').append(num)
+        }
+        function earseScreen(){
+            document.getElementById('screen').innerHTML=null
+        }
+    </script>
+</body>
+</html>

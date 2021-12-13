@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            display: inline-block;
+            padding: 5px;
+        }
+        button{
+            padding: 4px;
+        }
+        div{
+         
+        
+            text-align: center;
+        
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button onclick="qnt('-')">-</button>
+        <span id="output">0</span>
+        <button onclick="qnt('+')">+</button>
+    </div>
+
+    <script>
+       let x= 0
+       function qnt(op){
+           if(op == '+'){
+               x ++
+           }else{
+               if(x != 0){
+                   x --
+               }
+           }
+           document.getElementById('output').innerHTML=x
+       }
+      /* function dec(){
+           if(x != 0){
+               x --
+           }
+
+           document.getElementById('output').innerHTML=x
+       }
+
+       function inc(){
+           x ++
+           document.getElementById('output').innerHTML=x
+       } */
+    </script>
+</body>
+</html>

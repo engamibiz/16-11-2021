@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border: none;
+            padding: 10px 20px;
+            width: 100px;
+            background-color: brown;
+            color:white;
+            box-shadow: 0 5px 5px #333;
+            transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+        }
+        nav{
+            position: fixed;
+            right: 0;
+            background-color: brown;
+            height: 100vh;
+            top:0;
+            width: 300px;
+            display: none;
+
+        }
+        .down{
+            box-shadow: 0 2px 5px #333;
+            transform: translateY(3px);
+        }
+        a{
+            color:white;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 10px;
+            border-bottom: 1px solid white;
+        }
+
+    </style>
+</head>
+<body>
+    <button>Show</button>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">about</a>
+        <a href="#">contact</a>   
+    </nav>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $('button').mousedown(function(){
+            $(this).addClass('down')
+        })
+        $('button').mouseup(function(){
+            $(this).removeClass('down')
+        })
+        $('button').click(function(){
+            $('nav').toggle(500)
+            let text=$(this).html()
+            if(text == 'Show'){
+                $(this).html("Hide")
+            }else{
+                $(this).html("Show")
+            }
+        })
+    </script>
+</body>
+</html>
