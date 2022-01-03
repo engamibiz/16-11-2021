@@ -1,0 +1,59 @@
+.bar{
+    width: 20px;
+    height: 3px;
+    background-color: #333;
+    margin-bottom: 3px
+}
+.search button{
+    border: 1px solid #ddd;
+    border-right: none;
+}
+.search input{
+    border: 1px solid #ddd;
+    border-left:none
+
+}
+.categories .bg-white{
+    transition: background-color 0.5s ease-in-out,
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
+
+}
+.categories .bg-white:hover{
+    background-color: blue !important;
+    color:white !important;
+    transform: translate(-2px,-10px);
+    box-shadow: none;
+}
+.cartIcon{
+    width: 50px;
+    height: 50px;
+    padding: 12px 0 0 15px;
+    bottom:20px;
+    left:-70px;
+    z-index: 999;
+    transition: left 0.5s ease-in-out,
+    transform 0.5s ease-in-out;
+}
+.cartIcon .badge{
+    left: 30px;
+    top: 35px;
+    display: none;
+}
+
+.cartBox{
+    width: 300px;
+    left: 50px;
+    bottom: 50px;
+    z-index: 9999;
+    display: none;
+}
+
+@media (max-width: 992px){
+    #carouselExampleIndicators img{
+        height: 50vh !important;
+    }
+    #carouselExampleIndicators{
+        margin-top: 75px;
+    }
+}
